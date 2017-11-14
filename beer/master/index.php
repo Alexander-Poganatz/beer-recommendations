@@ -30,7 +30,7 @@ function displayMenu()
       </div>
 
       <div>
-        <button data-ng-click="updateJSON()" class="w3-btn">Update JSON</button>
+        <button data-ng-click="updateJSON()" class="w3-button w3-black">Update JSON</button>
       </div>
 
       <div>
@@ -57,7 +57,8 @@ function displayMenu()
       <div style="display: {{modalDisplay}}" class="w3-modal">
         <div class="w3-modal-content">
           <div class="w3-container">
-            <span class="w3-closebtn" data-ng-click="modalDisplay = \'none\'">&times;</span>
+            <span class="w3-button w3-display-topright" data-ng-click="modalDisplay = \'none\'">&times;</span>
+            <h3>Beer Form</h3>
             <form name="dataForm">
 
               <input type="text" name="beerName" data-ng-model="beerName" class="w3-input" required />
@@ -71,10 +72,11 @@ function displayMenu()
               </select>
 
               <br />
-              <button class="w3-btn w3-blue" value="Add" data-ng-show="showAddButton" data-ng-click="addBeer()">Add</button>
-              <button class="w3-btn w3-green" value="Update" data-ng-show="showUpdateButton" data-ng-click="updateBeer()">Update</button>
-              <button class="w3-btn w3-pink" value="delete" data-ng-show="showDeleteButton" data-ng-click="deleteBeer()" >Delete</button>
-
+              <div style="margin-top: 10px; margin-bottom:10px;">
+                      <button class="w3-btn w3-blue" value="Add" data-ng-show="showAddButton" data-ng-click="addBeer()">Add</button>
+                      <button class="w3-btn w3-green" value="Update" data-ng-show="showUpdateButton" data-ng-click="updateBeer()">Update</button>
+                      <button class="w3-btn w3-pink" value="delete" data-ng-show="showDeleteButton" data-ng-click="deleteBeer()" >Delete</button>
+              </div>
             </form>
           </div>
 
@@ -92,7 +94,8 @@ function displayMenu()
   <head>
     <title>Beer Manager</title>
     <meta charset="UTF-8" />
-    <link href="../w3.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../w3.css" rel="stylesheet" />
     <script src="../../angular.min.js"></script>
   </head>
 
