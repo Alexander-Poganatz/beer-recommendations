@@ -26,7 +26,7 @@ function displayMenu()
 
     <div class="w3-container" data-ng-app="beerManager" data-ng-controller="beerController">
       <div>
-        <h1>Beer Recommendation Manager</h1>
+        <h1 class="w3-border-bottom w3-border-green">Beer Recommendation Manager</h1>
       </div>
 
       <div>
